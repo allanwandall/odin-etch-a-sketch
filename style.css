@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +8,10 @@ body {
     background-color: lightgray;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    font-family: Roboto, sans-serif;
+    font-family: 'Raleway', sans-serif;
+    gap: 10px;
 }
 
 .container {
@@ -18,25 +21,23 @@ body {
     padding: 30px;
     width: 80vw;
     height: 80vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* margin-right: -50%; */
-    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center ;
+    align-items: center;
     gap: 20px;
-
+    user-select: none;
 }
 
 .hero {
     font-size: 45px;
+    color: rgb(255, 115, 0);
+    font-weight: 900;
+    text-shadow: .1em .1em 0 hsl(200 50% 30%);
 }
 
 
-.hero, .creator, .slidetext, .button-text {
+.creator, .slidetext, .button-text {
     background-color: #565656;
     color: transparent;
     text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
@@ -81,6 +82,7 @@ body {
 }
 
 .middle {
+    flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -98,7 +100,7 @@ button {
   text-align: center;
   text-decoration: none;
   font-size: 12px;
-  margin: 5px;
+  margin: 5px 5px 30px;
   box-shadow: 3px 3px 2px #aaaaaa;
   border-radius: 50%;
   opacity: 60%;

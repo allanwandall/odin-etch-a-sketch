@@ -7,7 +7,7 @@ let currentMode;
 let mouseDown = false;
 
 document.body.addEventListener('mousedown', () => (mouseDown = true));
-document.body.addEventListener('mouseup', () => (mouseDown = false))
+document.body.addEventListener('mouseup', () => (mouseDown = false));
 
 const rainbowBtn = document.getElementById("rainbowBtn");
 const blackBtn = document.getElementById("blackBtn");
